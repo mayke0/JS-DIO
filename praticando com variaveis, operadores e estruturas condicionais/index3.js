@@ -8,19 +8,19 @@ Codigo condicao de pagamento:
 -em duas vezes, preco normal de etiqueta sem juros 
 -acima de duas vezes, preco normal de etiqueta mais juros de 10%
 */
-const formaPagamento = "a vista debito";
+const formaPagamento = "em duas vezes";
 const pagamento = 1500;
 const parcela = 1;
 if (formaPagamento === "a vista debito") {
   console.log(pagamento * 0.9);
 } else if (formaPagamento === "a vista no dinheiro") {
   console.log(pagamento * 0.85);
-} else if (formaPagamento === "em duas vezes" && parcela === 2) {
-  console.log(`2x${pagamento / parcela}`);
+} else if (formaPagamento === "em duas vezes") {
+  console.log(`2x${pagamento / 2}`);
 } else if (formaPagamento === "acima de duas vezes" && parcela > 2) {
   console.log(
     `${parcela}x ${((pagamento + pagamento * 0.1) / parcela).toFixed(2)}`
   );
 }else{
-    console.log();
+    console.log('Não existe essa opção');
 }
