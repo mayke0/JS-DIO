@@ -1,0 +1,62 @@
+<!-- combinadores: qual tipo de relacao entre 2 seletores.
+    1. combinador descendente(espaco)
+    2. combinador filho(>)
+    3. combinador irmao adjacente(+)
+    4. combinador irmao em geral (~)
+    
+    [seletor] [combinador] [seletor]
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div p {
+        background: lightgreen;
+      }
+      div > p {
+        color: red;
+      }
+      */
+      .fundo-azul > p{
+        background: lightblue;
+      }
+      .fundo-verde > p{
+        background: lightgreen;
+      }
+    </style> 
+
+
+  </head>
+  <body>
+    <div class="fundo-verde">
+      <p>paragrafo 1 dentro da div</p>
+      <p>paragrafo 2 dentro da div</p>
+      <span>
+        <p>paragrafo 3 dentro da div, dentro do span</p>
+      </span>
+    </div>
+
+    <div class="fundo-verde">
+      <p>paragrafo 4, fora da div</p>
+      <p>paragrafo 5, fora da div</p>
+      <span>
+        <p>paragrafo 6 dentro da div, dentro do span</p>
+      </span>
+    </div>
+
+    <div class="fundo-azul">
+      <p>paragrafo 7 dentro da div</p>
+      <p>paragrafo 8 dentro da div</p>
+      <span>
+        <p>paragrafo 9 dentro da div, dentro do span</p>
+      </span>
+    </div>
+
+    <p>paragrafo 10, fora da div</p>
+    <p>paragrafo 11, fora da div</p>
+  </body>
+</html>

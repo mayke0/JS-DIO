@@ -1,0 +1,52 @@
+<!-- seletores: definem em quais elementos nos vamos aplicar o css
+    1. seletor de tag/tipo
+    2.seletor de id
+    3.seletor de classes
+    4.seletor universal
+    5.seletor de atributo
+ -->
+
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{  /*1. seletor de tag/tipo */
+            background: darkblue;
+            color: lightgreen;
+        }
+        div{
+            background: lightblue;
+            color: slateblue;
+        }
+        li{
+            background: lightgreen;
+        }
+        #testo-boas-vindas{ /*2.seletor de id*/
+            background: red;
+            color: white;
+        }
+        .seletores-mais-comuns{ /*3.seletor de classes*/
+            color: red;
+        }
+
+        * {
+            font-weight: bold; /*4.seletor universal*/
+        }
+        [title="Streaming"]{ /*5.seletor de atributo*/
+            background: red;
+        }
+    </style>
+ </head>
+ <body>
+    <div></div>
+    <h1>seletores css</h1>
+    <p id="testo-boas-vindas"> bem vindo</p>
+    <p id="explicacao-seletores">no css nos possuimos os elementos por id</p>
+    <li class="seletores-mais-comuns">seletor por classe</li>
+    <a title="Streaming Netflix" href="https://www.netflix.com/browse">Netflix</a>
+ </body>
+ </html>
