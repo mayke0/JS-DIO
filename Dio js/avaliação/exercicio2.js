@@ -25,11 +25,11 @@ for (numero in numeros) {
       maiorNumeroPar = numeros[numero];
     }
   } else {
-    
-      menorNumeroImpar = numeros[numero];
-    }if (numeros[numero] < menorNumeroImpar) {
-       menorNumeroImpar = numeros[numero];
-     }
+    menorNumeroImpar = numeros[numero];
+  }
+  if (numeros[numero] < menorNumeroImpar) {
+    menorNumeroImpar = numeros[numero];
+  }
 }
 console.log(maiorNumeroPar);
 console.log(menorNumeroImpar);
