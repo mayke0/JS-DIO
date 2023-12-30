@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Estilos de tabelas - Dio.me</title>
+    <style>
+      table{
+          -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+          box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+          border: solid 1px gray;
+      }
+      table thead th{
+          background-color: black;
+          color: white
+      }
+      table tfoot td{
+          background-color: lightgrey;
+      }
+      table tfoot tr:nth-child(even) td{
+          background-color: #f1f1f1;
+      }
+      table tbody tr:hover td {
+          background-color: #e9e9e9;
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      cellspacing="0"
+      cellpadding="5"
+      width="250"
+      align="center"
+    >
+      
+      <thead>
+        <tr>
+          <th colspan="2">Minha tabela</th>
+        </tr>
+        <tr>
+          <th title="Nome completo">Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Diogo</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Rayane</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Maycon</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Dayane</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Jonas</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
